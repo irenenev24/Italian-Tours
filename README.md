@@ -1,59 +1,36 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Italian Tours.
+This is a website to promote three different regions in Italy. Namely Rome, Abruzzo and Sicily. Each region will have its own page where three places to vist and three things to do in the region will be highlighted. Each page will feature an interactive map that will highlight where the areas to visit are located. I want to use this website to build awareness around these areas and increase social media presence and reviews using links to social media platforms. Providing a clean and easy to navigate site with an interactive map is important to ensure good UI for new and repeat clients.
 
-Welcome USER_NAME,
+UX
+* Who is this website for?
+This website is for people who want information on the three featured regions of Italy: Rome, Abruzzo and Sicily. 
+This website is for people based worldwide looking to book a holiday in Italy.
+It is aimed at people aged 18+ with disposable income.
+* What do visitors want?
+Visitors want clear information on the three different areas including images.
+Clear information on things to see and do while in Italy, each area will have a seperate page with an interactive map and will highlight three places to visit and three things to do in the area.
+Interactive maps to provide information for new and repeat users.
+Easy to find contact/faq forms to be included to assist new and repeat visitors.
+A trustworthy, easy to navigate site that gives clear information about the
+three areas.
+Multiple ways to contact the company including links to social media pages.
+* Business Goals:
+Build awareness for the different areas and boost social media presence.
+Showcase pictures of each area and things to do while in the country.
+* Customer Goals:
+- First time customer
+Is this site trusthworthy and easy to navigate?
+Is the purpose of this site clear?
+Do I understand the information provided about the three areas?
+Is the information provided useful?
+Are there any reviews about the areas that I can read?
+I have some unanswered questions, is there a section that can help answer these?
+How can I contact them to make a booking or ask for more information?
+- Repeat Customers
+Can I find additional information about a region on the site?
+Can I use the map to help me find the area?
+Can I contact the company for more information?
+Can I book on this site?
+I want to leave a review, where do I go?
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+* 
