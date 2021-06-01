@@ -3,13 +3,13 @@
 This is a website to promote three different regions in Italy. Namely Rome, Abruzzo and Sicily. Each region will have its own page where three places to vist and three things to do in the region will be highlighted. Each page will feature an interactive map that will highlight where the areas to visit are located. I want to use this website to build awareness around these areas and increase social media presence and reviews using links to social media platforms. Providing a clean and easy to navigate site with an interactive map is important to ensure good UI for new and repeat clients.
 
 UX
-# Who Is This Website For?
+## Who is this website for?
 
 * This website is for people who want information on the three featured regions of Italy: Rome, Abruzzo and Sicily. 
-This website is for people based worldwide looking to book a holiday in Italy.
-It is aimed at people aged 18+ with disposable income.
+* This website is for people based worldwide looking to book a holiday in Italy.
+* It is aimed at people aged 18+ with disposable income.
 
-#  What Do Visitors Want?
+##  What do visitors want?
 
 * Visitors want clear information on the three different areas including images.
 * Clear information on things to see and do while in Italy, each area will have a seperate page with an interactive map and will highlight three places to visit and three things to do in the area.
@@ -19,12 +19,12 @@ It is aimed at people aged 18+ with disposable income.
 three areas.
 * Multiple ways to contact the company including links to social media pages.
 
-# Business Goals:
+## Business Goals:
 
 * Build awareness for the different areas and boost social media presence.
 Showcase pictures of each area and things to do while in the country.
 
-# Customer Goals:
+## Customer Goals:
 
 ### First time customer:
 
@@ -108,3 +108,8 @@ Showcase pictures of each area and things to do while in the country.
 * Promotional videos
 
 # Technologies Used
+
+# Wireframes 
+  
+  https://balsamiq.cloud/s1p2tmi/phiz6jc 
+  
