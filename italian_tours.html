@@ -5,83 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>ITALIAN TOURS</title>
 </head>
-<body> 
+<body>
     <header>
-        <nav>
-            <ul>
-                 <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>  
-                 <li class="nav-item">
-                        <a class="nav-link" href="#">Rome</a>
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Abruzzo</a>
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Sicily</a>
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-            </ul>
-        </nav>
-    </header>
-    
+        <nav class="navbar navbar-expand-md bg-custom navbar-custom ">
+  <a class="navbar-link nav-logo" href="#">Italy</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+   <span class="navbar-toggler-icon"><i class="fas fa-bars navbar-icon"></i>
+</span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Rome</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Abruzzo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sicily</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+</header>
     <main>
         <section>
-           <div class="welcome"><h1>Italy</h1>
+           <div class="welcome jumbotron"><h1>Italy</h1><br>
            <h2 class="welcome-italian">BENVENUTO IN ITALIA</h2>
-           <h3 class="welcome-english">WELCOME TO ITALY</h3>
+           <h3 class="welcome-english">WELCOME TO ITALY</h3><br>
            <p>Home to many of the world's greatest works of art, architecture and gastronomy, Italy elates, inspires and moves like no other.</p></div>
+
       <div class="collapsing-cards">
-      <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1515859005217-8a1f08870f59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=999&q=80')">
-        <h3>CHIETI</h3>
-      </div>
-      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1514896856000-91cb6de818e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80')">
-        <h3>Colosseum, Rome</h3>
-      </div>
-      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1499602211854-122b55ef8f5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80')">
-        <h3>Sicily</h3>
-      </div>
-      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1529260830199-42c24126f198?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80')">
-        <h3>Vatican City</h3>
-      </div>
-      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1513581166391-887a96ddeafd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')">
-        <h3>Rome</h3>
-      </div>
-        </div>
-          
+           <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1513581166391-887a96ddeafd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')">
+           <h3>Rome</h3>
+           </div>
+           <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1515859005217-8a1f08870f59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=999&q=80')">
+           <h3>Sicily</h3>
+           </div>
+           <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1499174549139-68d3f37243b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80')">
+           <h3>Abruzzo</h3>
+           </div>
+           <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1518098177606-8e35400d3a2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=754&q=80')">
+           <h3>Sicily</h3>
+           </div>
+           <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1529260830199-42c24126f198?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80')">
+           <h3>Vatican City, Rome</h3>
+           </div>
+           </div>
         </section>
     </main>
     <section>
-        <h2 class="heading">PLACES TO VISIT IN ITALY</h2>
-            <div class="flex-container">
-                <div><img src="assets/images/roman-architecture-small.jpg" alt="roman-ruins" id="img"><h3>Rome</h3><p>A heady mix of haunting ruins, awe-inspiring art and vibrant street life, Italy’s hot-blooded capital is one of the world’s most romantic and charismatic cities.</p></div>
-                <div><img src="assets/images/abruzzo-mountain-small.jpg" alt="abruzzo-mountain" id="img"><h3>Abruzzo</h3><p>Featuring unspoilt beaches, natural lakes, beautiful landscapes and authentic villages, Abruzzo has everything needed to help you relax in a tranquil setting.</p></div>
-            <div><img src="assets/images/sicily-beach-small.jpg" alt="sicily-beach" id="img"><h3>Sicily</h3><p>Eternal crossroads of the Mediterranean, the gorgeous island of Sicily continues to seduce travellers with its dazzling diversity of landscapes and cultural treasures.</p></div></div>
+<br><br><br><br>
+ <section class="text-center destinations container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="review-heading">Things to do in Italy</h4>
+                </div>
+            </div>
+        <br>
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                <a  target="_blank" href="/abruzzo.html">
+                            <img class="area-image" src="assets/images/abruzzo-mountain-small.jpg" alt="Forest"></a>
+                            <br><br>
+                            <h3 class="section-header">Abruzzo</h3>
+                            <p class="description">Featuring unspoilt beaches, natural lakes, beautiful landscapes and authentic villages, Abruzzo has everything needed to help you relax in a tranquil setting.</p>
+                        </div>
+              
+                <div class="col-12 col-md-4 col-lg-3">
+                   <a target="_blank" href="/abruzzo.html">
+                            <img class="area-image" src="assets/images/abruzzo-mountain-small.jpg" alt="Forest"></a>
+                            <br><br>
+                            <h3 class="section-header">Abruzzo</h3>
+                            <p class="description">Featuring unspoilt beaches, natural lakes, beautiful landscapes and authentic villages, Abruzzo has everything needed to help you relax in a tranquil setting.</p>
+                        </div>
+               
+                <div class="col-12 col-md-4 col-lg-3">
+                    <a target="_blank" href="/abruzzo.html">
+                            <img class="area-image" src="assets/images/sicily-beach-small.jpg" alt="sicily-beach"></a>
+                            <br><br>
+                            <a target="_blank" href="/abruzzo.html"><h3 class="section-header">Sicily</h3></a>
+                            <p class="description">Eternal crossroads of the Mediterranean, the gorgeous island of Sicily continues to seduce travellers with its dazzling diversity of landscapes and cultural treasures.</p>
+                        </div>
 
-       <h2 class="heading">TOURIST ATTRACTIONS IN ITALY</h2>
-       <div class="flex-container">
-            <div><img src="assets/images/catacombs-rome-small.jpg" alt="catacombs-rome" id="img">
-                <h3>Catacombs, Rome</h3>
-                <p>The Catacombs of Rome are former underground burial grounds that date from the second to the fifth century and were principally used by Christians and Jews.
-            </p></div>
-            <div><img src="assets/images/lake-scanno-small.jpg" alt="lake-scanno" id="img">
-                <h3>Lake Scanno, Abruzzo</h3>
-                <p>Lake Scanno is the largest natural lake in Abruzzo.
-               Here you will find boats to hire, beautiful scenery and water that has won a blue flag making it perfect for swimming.
-            </p></div>
-            <div><img src="assets/images/palermo-small-street.jpg" alt="palermo-street" id="img">
-                <h3>San Vito Lo Capo, Sicily</h3>
-                <p>Here, you will find a stunning stretch of white sandy beach at the foot of Monte Monaco which has made San Vito Lo Capo so famous in Italy and beyond.
-                Surrounded by quaint villages, locals view the surroundings from sun soaked balconies.
-        </p></div>
-        </div>
-        
-    </section>
+                <div class="col-12 col-md-4 col-lg-3">
+                        <a target="_blank" href="/abruzzo.html">
+                            <img class="area-image" src="assets/images/abruzzo-mountain-small.jpg" alt="Forest"></a>
+                            <br><br>
+                            <h3 class="section-header">Abruzzo</h3>
+                            <p class="description">Featuring unspoilt beaches, natural lakes, beautiful landscapes and authentic villages, Abruzzo has everything needed to help you relax in a tranquil setting.
+                            </p>
+                        </div>
+            </div>
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <h2>Google Interactive Map</h2>
      <script src="script.js"></script>
