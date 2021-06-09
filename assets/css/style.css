@@ -13,6 +13,13 @@ body {
   justify-content: center;
   margin: 0;
 }
+.navbar-custom{
+  background-color: aquamarine;
+  
+}
+.jumbotron{
+    width: 100vw;
+}
 .welcome{
     text-align: center;
     font-size: 30px;
@@ -25,39 +32,35 @@ body {
     font-family: 'Dancing Script', cursive;
     color: red;
 }
-
 .container {
   display: flex;
-  width: 90vw;
+  width: 100vw;
 }
-
 .panel {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 60vh;
   border-radius: 50px;
   color: #FF0000;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
   position: relative;
+  transition: all;
   -webkit-transition: all 700ms ease-in;
 }
-
 .panel h3 {
   font-size: 24px;
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   margin: 0;
   opacity: 0;
 }
-
 .panel.active {
   flex: 5;
 }
-
 .panel.active h3 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
@@ -72,4 +75,72 @@ body {
   .panel:nth-of-type(5) {
     display: none;
   }
+}
+.review-heading{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+img{
+  border-radius: 15px;
+  padding: 5px;
+  width: 350;
+  height: 350px;
+  text-decoration:none;
+}
+img:hover {
+  box-shadow: 8px 6px 2px 1px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #e62e20;
+}
+.section-header{
+  color:#41d307;
+  text-decoration:none;
+}
+.section-header:hover{
+  color:#e62e20;
+  text-decoration: underline #e62e20;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+.footer{
+    background-color: cornsilk;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.footer-heading {
+    color: #41d307;
+    font-family: "Dancing Script", cursive;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 4px;
+}
+.footer-text{
+    font-family: "Roboto", sans-serif;
+    font-size: .6em;
+}
+.social-links {
+    font-size: 2em;
+    margin: 2px;
+    padding: 2px 1px;
+}
+.icons{
+    color: #e62e20;
+    font-size: 2px;
 }
