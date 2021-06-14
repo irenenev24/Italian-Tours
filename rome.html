@@ -3,82 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>ROME TOURS</title>
 </head>
 <body> 
     <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Rome</li>
-                <li>Abruzzo</li>
-                <li>Sicily</li>
-                <li>Contact Us</li>
+        <nav class="navbar navbar-expand-md navbar-custom">
+            <a class="navbar-link nav-logo" href="/index.html">Italy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-navbar-custom-icon"><i class="fas fa-bars navbar-icon"></i>
+            </span>
+            </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/rome.html">Rome</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/abruzzo.html">Abruzzo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sicily.html">Sicily</a>
+                </li>    
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>    
             </ul>
+        </div>  
         </nav>
     </header>
     <main>
         <section>
-            <h1>Rome</h1>
-            <p>Rome, historic city and capital of the country of Italy. Once the capital of an ancient republic and empire whose armies and polity defined the Western world in antiquity and left seemingly indelible imprints thereafter, the spiritual and physical seat of the Roman Catholic Church, and the site of major pinnacles of artistic and intellectual achievement, Rome is the Eternal City, remaining today a political capital, a religious centre, and a memorial to the creative imagination of the past.</p>
+            <div class="welcome">
+                <h1>Rome</h1>
+                    <p>Rome, historic city and capital of the country of Italy. Once the capital of an ancient republic and empire whose armies and polity defined the Western world in antiquity and left seemingly indelible imprints thereafter, the spiritual and physical seat of the Roman Catholic Church, and the site of major pinnacles of artistic and intellectual achievement, Rome is the Eternal City, remaining today a political capital, a religious centre, and a memorial to the creative imagination of the past.
+                </p>
+            </div>
         </section>
-    </main>
-    <section>
-        <h2>PLACES TO VISIT IN ROME</h2>
-        <div><img src="assets/images/colosseum-small-2.jpg" alt="Colosseum, Rome"><h3>Colosseum, Rome</h3><p>The Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world today, despite its age.</p></div>
-        <div><img src="assets/images/vatican-small.jpg" alt="Vatican, Rome"><h3>Vatican, Rome</h3><p>Vatican City, a city-state surrounded by Rome, Italy, is the headquarters of the Roman Catholic Church. It's home to the Pope and a trove of iconic art and architecture. Its Vatican Museums house ancient Roman sculptures such as the famed “Laocoön and His Sons” as well as Renaissance frescoes in the Raphael Rooms and the Sistine Chapel, famous for Michelangelo’s ceiling.</p></div>
-        <div><img src="assets/images/trevi-fountain-small.jpg" alt="Trevi Fountain, Rome"><h3>Trevi Fountain, Rome</h3><p>The Trevi Fountain is a fountain in the Trevi district in Rome, Italy, designed by Italian architect Nicola Salvi and completed by Giuseppe Pannini and several others. Standing 26.3 metres high and 49.15 metres wide, it is the largest Baroque fountain in the city and one of the most famous fountains in the world.</p></div>
-
-        <h2>TOURIST ATTRACTIONS IN ROME</h2>
-        <div><img src="assets/images/roman-architecture-small.jpg" alt="Cloaca Maxima, Rome"><h3>Cloaca Maxima, Rome</h3><p>The Cloaca Maxima was one of the world's earliest sewage systems. Built during either the Roman Kingdom or early Roman Republic, it was constructed in Ancient Rome in order to drain local marshes and remove waste from the city.</p></div>
-        <div><img src="assets/images/Basilica dei Santi XII Apostoli - Rome.jpg" alt="Basilica Dei Santa XII Apostoli"><h3>Basilica Dei Santa XII Apostoli</h3><p>Santi Dodici Apostoli, commonly known simply as Santi Apostoli, is a 6th-century Roman Catholic parish and titular church and minor basilica in Rome, Italy, dedicated originally to St. James and St. Philip, whose remains are kept here, and later to all Apostles.</p></div>
-        <div><img src="assets/images/Piazza Venezia, Rome.jpg" alt="Piazza Venezia"><h3>Piazza Venezia</h3><p>Piazza Navona is a public open space in Rome, Italy. It is built on the site of the Stadium of Domitian, built in the 1st century AD, and follows the form of the open space of the stadium. The ancient Romans went there to watch the agones, and hence it was known as "Circus Agonalis"</p></div>
-        
+    
+        <section class="text-center destinations container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="review-heading">Places To Visit In Rome</h4>
+                </div>
+                <br><br>     
+                <div class="column">
+                    <a target="_blank" href="/rome.html">
+                            <img class="area-image" src="assets/images/colosseum-small-2.jpg" alt="Colosseum, Rome">
+                            <br><br>
+                            <h3 class="section-header">Colosseum, Rome
+                            </h3></a><p class="description">The Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world today, despite its age.</p>
+                </div> 
+                <div class="column">
+                   <a  target="_blank" href="/abruzzo.html">
+                            <img class="area-image " src="assets/images/vatican-small.jpg" alt="Vatican, Rome"><h3>Vatican, Rome</h3></a><p class="description">Vatican City, a city-state surrounded by Rome, Italy, is the headquarters of the Roman Catholic Church. It's home to the Pope and a trove of iconic art and architecture. Its Vatican Museums house ancient Roman sculptures such as the famed “Laocoön and His Sons” as well as Renaissance frescoes in the Raphael Rooms and the Sistine Chapel, famous for Michelangelo’s ceiling.
+                </p></div>
+                <div class="column">
+                    <a target="_blank" href="/sicily.html">
+                            <img class="area-image" src="assets/images/trevi-fountain-small.jpg" alt="Trevi Fountain, Rome"><h3>Trevi Fountain, Rome</h3></a><p class="description">The Trevi Fountain is a fountain in the Trevi district in Rome, Italy, designed by Italian architect Nicola Salvi and completed by Giuseppe Pannini and several others. Standing 26.3 metres high and 49.15 metres wide, it is the largest Baroque fountain in the city and one of the most famous fountains in the world.
+                </p></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="review-heading">Things to do in Rome</h4>
+                </div>
+        <div class="column">
+                            <img class="area-image" src="assets/images/Basilica dei Santi XII Apostoli - Rome.jpg" alt="Basilica Dei Santa XII Apostoli">
+                            <br><br>
+                            <h3 class="section-header">Basilica Dei Santa XII Apostoli</h3>
+                            <p class="description">Santi Dodici Apostoli, commonly known simply as Santi Apostoli, is a 6th-century Roman Catholic parish and titular church and minor basilica in Rome, Italy, dedicated originally to St. James and St. Philip, whose remains are kept here, and later to all Apostles.</p>
+        </div>
+        <div class="column">               
+                            <img class="area-image" src="assets/images/roman-architecture-small.jpg" alt="Cloaca Maxima">
+                            <br><br>
+                            <h3 class="section-header">Cloaca Maxima</h3>
+                            <p class="description">The Cloaca Maxima was one of the world's earliest sewage systems. Built during either the Roman Kingdom or early Roman Republic, it was constructed in Ancient Rome in order to drain local marshes and remove waste from the city. It carried effluent to the River Tiber, which ran beside the city</p>
+        </div>
+        <div class="column">
+                            <img src="assets/images/sistine-chapel.jpg" alt="sistine chapel"><h3>Sistine Chapel</h3><p>The Sistine Chapel is a chapel in the Apostolic Palace, the official residence of the pope, in Vatican City. Originally known as the Cappella Magna, the chapel takes its name from Pope Sixtus IV, who built it between 1473 and 1481
+            </p>
+        </div>
     </section>
+</main>
 
     <h3>Google Interactive Map</h3>
 </body>
-
-<footer>
-    <div class="social-links">
-            <h5 class="footer-heading">Social Links:</h5>
-            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" rel="noopener"><i class=" fa fa-facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter" rel="noopener"><i class="fa fa-twitter-square"></i></a>
-            <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube" rel="noopener"><i class="fa fa-youtube-square"></i></a>
-            <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat" rel="noopener"><i class="fa fa-snapchat-ghost"></i></a>    
+<footer class="footer container-fluid">
+    <div class="row">
+            <div class="col-md-6 text-center">
+                <div class="footer-details">
+                   <h5 class="footer-heading">Contact Us:</h5>
+                   <p class="footer-text"><span>Email Us:</span> <a class="email-address" href="contact.html">visititaly@gmail.com</a></p>
+                   <p class="footer-text"><span>Phone:</span>  +44 536675298</p>
+                   <p class="footer-text"><span>Address :</span>  372 Venice Drive,Rome, Italy</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 text-center">
+                
+                    <h5 class="footer-heading">Social Links:</h5>
+                    <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" rel="noopener"><i class="fa fa-facebook icons"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener"><i class="fa fa-instagram icons"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter" rel="noopener"><i class="fa fa-twitter-square icons"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube" rel="noopener"><i class="fa fa-youtube-square icons"></i></a>
+                    <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat" rel="noopener"><i class="fa fa-snapchat-ghost icons"></i></a>    
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 </html>
-
-
-
-
-
-
-
-
-
- <div class="md-4">
-                <a  target="_blank" href="/rome.html">
-                            <img class="area-image " src="assets/images/Piazza Venezia, Rome.jpg" alt="Piazza Venezia">
-                            <br><br>
-                            <h3 class="section-header">Piazza Venezia<br> Rome</h3></a>
-                            <p class="description"></p>
-                        </div>
-                <div class="md-4">
-                   <a target="_blank" href="/abruzzo.html">
-                            <img class="area-image" src="assets/images/deer-small.jpg" alt="Deer"><br><br>
-                            <h3 class="section-header">Majella National Park
-                            <br>Abruzzo</h3></a>
-                            <p class="description">Featuring unspoilt beaches, natural lakes, beautiful landscapes and authentic villages, Abruzzo has everything needed to help you relax in a tranquil setting.</p>
-                        </div>
-                <div class="md-4">
-                   <a target="_blank" href="/sicily.html">
-                            <img class="area-image" src="assets/images/mount-etna-small.jpg" alt="Mount Etna"><br><br>
-                            <h3 class="section-header">Mount Etna<br>Sicily</h3></a>
-                            <p class="description">Mount Etna, or Etna is an active stratovolcano on the east coast of Sicily, Italy, in the Metropolitan <br>City of Catania, between the cities of Messina and Catania.</p>
-                        </div>
-                    </div>
-                </div>

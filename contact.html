@@ -58,3 +58,628 @@ Italy, country of south-central Europe, occupying a peninsula that juts deep int
                             <p class="description">Featuring unspoilt beaches, natural lakes, beautiful landscapes and authentic villages, Abruzzo has everything needed to help you relax in a tranquil setting.</p>
                         </div>
                     </div>-->
+
+
+                    function showPlaces() {
+        let places_container = document.getElementById('places')
+
+}
+
+function generate_place_html(place){
+        let animal_div = document.createElement('div')
+        place_div.setAttribute('class', 'place')
+        let header = document.createElement('h3')
+        header.innerHTML = place.name
+        let image = document.createElement('img')
+        image.setAttribute('src', place.image_location)
+        let description = document.createTextNode(place.description)
+
+        place_div.appendChild(header)
+        place_div.appendChild(image)
+        place_div.appendChild(description)
+    
+        return place_div
+}
+showPlaces()
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans+JP&family=Roboto:wght@300;400&display=swap');
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: cornsilk;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar{
+    width: 100vw;
+}
+.bg-custom{
+background-image: linear-gradient(90deg, rgba(0, 128, 0, 0.6) 15%, rgba(255, 255, 255, 0.3) 50%, rgba(247, 12, 12, 0.6) 85%);
+}
+.nav-logo{
+    color: #000000;
+    font-style: italic;
+}
+.navbar {
+    min-height: 8vh;
+}
+
+.navbar-brand span {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  border-radius: 50px;
+  color: #FF0000;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: all;
+  -webkit-transition: all 700ms ease-in;
+}
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+.review-heading{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+
+.main-image {
+
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jumbotron{
+    width: 100%;
+}
+.welcome{
+    text-align: center;
+    font-size: 30px;
+}
+.welcome-italian {
+    font-family: 'Dancing Script', cursive;
+    color: green;
+}
+.welcome-english{
+    font-family: 'Dancing Script', cursive;
+    color: red;
+}
+.container {
+  display: flex;
+  width: 100vw;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+{
+  border-radius: 15px;
+  padding: 5px;
+  width: 350;
+  height: 350px;
+  text-decoration:none;
+}
+iover {
+  box-shadow: 8px 6px 2px 1px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #e62e20;
+}
+.section-header{
+  color:#41d307;
+  text-decoration:none;
+}
+.section-header:hover{
+  color:#e62e20;
+  text-decoration: underline #e62e20;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+.footer{
+    background-color: cornsilk;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.footer-heading {
+    color: #41d307;
+    font-family: "Dancing Script", cursive;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 4px;
+}
+.footer-text{
+    font-family: "Roboto", sans-serif;
+    font-size: .6em;
+}
+.social-links {
+    font-size: 2em;
+    margin: 2px;
+    padding: 2px 1px;
+}
+.icons{
+    color: #e62e20;
+    font-size: 2px;
+}*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>ITALIAN TOURS</title>
+</head>
+<body>
+    <header>
+<nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand col-5 col-md-4 col-lg-8 col-xl-7" href="index.html">ITALY</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link nav-name" href="index.html">ROME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-name" href="abruzzo.html">ABRUZZO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-name" href="sicily.html">SICILY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-name" href="contact.html" tabindex="-1" aria-disabled="false">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</header>
+<main>
+        <section>
+          
+            <div class="main-image">
+               <img src="/assets/images/Piazza Venezia, Rome.jpg" alt="">
+                <div id="main-paragraph">
+                    <p class="hero-text">Home to many of the world's greatest works of art, architecture <br>and gastronomy, Italy elates, inspires and moves like no other</p>
+                    <p class="text" id="text-box">
+                        <span id="dropdown-text"></span>
+                        <br>
+                        <i id="dropdown-icon" class="fas fa-angle-double-down"></i>
+                    </p>
+                </div>
+            </div>
+
+<div class="collapsing-cards container">
+           <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1513581166391-887a96ddeafd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')">
+           <h3>Rome</h3>
+           </div>
+           <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1515859005217-8a1f08870f59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=999&q=80')">
+           <h3>Sicily</h3>
+           </div>
+           <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1499174549139-68d3f37243b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80')">
+           <h3>Abruzzo</h3>
+           </div>
+           <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1518098177606-8e35400d3a2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=754&q=80')">
+           <h3>Sicily</h3>
+           </div>
+           <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1529260830199-42c24126f198?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80')">
+           <h3>Vatican City, Rome</h3>
+           </div>
+        </div>
+    </section>
+<br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+         <br>
+           <button id="btn-1" class="map-buttons font-style btn btn-primary">ROME</button>
+            <span id="dropdown-text">Home to the Eternal city and such manmade wonders as the sistine chapel and the trevi fountain Rome is Italy's vibrant capital, a must see for any lover of Italian culture.<i class="fas fa-angle-double-down"id="dropdown"></i></span></p>
+        </div>
+        <!--  <div class="jumbotron " style="background-color: cornsilk">
+              <div class="welcome">
+                    <h1>ITALY</h1>
+                    <br>
+                    <h2 class="welcome-italian">BENVENUTO IN ITALIA</h2>
+                    <h3 class="welcome-english">WELCOME TO ITALY</h3>
+                    <br>
+                    <p>Home to many of the world's greatest works of art, architecture <br>and gastronomy, Italy elates, inspires and moves like no other.
+                    </p>
+                </div>
+            </div>
+            <div  id="places">
+    <div class="place">
+        <h3>Rome</h3> <img src="assets/images/colosseum-small.jpg" alt="">-->
+    
+       
+        <!--TO MAKE IMAGE LARGER WHEN HOVERED OVER-----<div class="section"><div class="dropdown">
+  <img src="assets/images/abruzzo-mountain-small.jpg" alt="Cinque Terre" width="150" height="100">
+  <div class="dropdown-content">
+  <img src="assets/images/abruzzo-mountain-small.jpg" alt="Cinque Terre" width="300" height="200">
+  <div class="desc">Beautiful Cinque Terre</div>
+  </div>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<div id="about-text">
+      <p id="about-paragraph" class="font-style">
+   
+        <span id="dropdown-text">
+      
+        <br />-<img src="assets/images/colosseum-small.jpg" alt=""/>-->
+      
+        <i id="dropdown-icon" class="fas fa-angle-double-down"></i>
+      </p>
+    </div>
+    <!--*********************Buttons to control the Google maps API************************-->
+    <div id="map-buttons-div" class="container-fluid">
+      <button id="btn-1" class="map-buttons font-style btn btn-primary">ABRUZZO</button>
+      <button id="btn-2" class="map-buttons font-style btn btn-primary">SICILY</button>
+      <button id="btn-3" class="map-buttons font-style btn btn-primary">CONTACT US</button>
+    </div>
+    <div id="map"></div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<section class="text-center destinations container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="review-heading">Places To Visit In Italy</h4>
+                </div>
+                <br><br>     
+                <div class="column">
+                    <a target="_blank" href="/rome.html">
+                            <img class="area-image" src="assets/images/colosseum-small.jpg" alt="colosseum">
+                            <br><br>
+                            <h3 class="section-header">Rome</h3></a>
+                            <p class="description">Home to the Eternal city and such manmade wonders as the sistine chapel and the trevi fountain Rome is Italy's vibrant capital, a must see for any lover of Italian culture.</p>
+                </div> 
+                <div class="column">
+                   <a  target="_blank" href="/abruzzo.html">
+                            <img class="area-image " src="assets/images/abruzzo-mountain-small.jpg" alt="Majella-national-park">
+                            <br><br>
+                            <h3 class="section-header">Abruzzo</h3></a>
+                            <p class="description">Featuring unspoilt beaches, natural lakes, beautiful landscapes and authentic villages, Abruzzo has everything needed to help you relax in a tranquil setting.</p>
+                </div>
+                <div class="column">
+                    <a target="_blank" href="/sicily.html">
+                            <img class="area-image" src="assets/images/sicily-beach-small.jpg" alt="sicily-beach">
+                            <br><br>
+                            <h3 class="section-header">Sicily</h3></a>
+                            <p class="description">Eternal crossroads of the Mediterranean, the gorgeous island of Sicily continues to seduce travellers with its dazzling diversity of landscapes and cultural treasures.
+                            </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="review-heading">Things to do in Italy</h4>
+                </div>
+        <br><br>
+               <div class="column">
+                <a  target="_blank" href="/rome.html">
+                            <img class="area-image " src="assets/images/Piazza Venezia, Rome.jpg" alt="Piazza Venezia">
+                            <br><br>
+                            <h3 class="section-header">Piazza Venezia<br> Rome</h3></a>
+                            <p class="description">Piazza Venezia is the central hub of Rome, Italy, in which several thoroughfares intersect, including the Via dei Fori Imperiali and the Via del Corso</p>
+                        </div>
+                <div class="column">
+                   <a target="_blank" href="/abruzzo.html">
+                            <img class="area-image" src="assets/images/deer-small.jpg" alt="Deer"><br><br>
+                            <h3 class="section-header">Majella National Park
+                            <br>Abruzzo</h3></a>
+                            <p class="description">Featuring unspoilt beaches, natural lakes, beautiful landscapes and authentic villages, Abruzzo has everything needed to help you relax in a tranquil setting.</p>
+                        </div>
+                <div class="column">
+                   <a target="_blank" href="/sicily.html">
+                            <img class="area-image" src="assets/images/mount-etna-small.jpg" alt="Mount Etna"><br><br>
+                            <h3 class="section-header">Mount Etna<br>Sicily</h3></a>
+                            <p class="description">Mount Etna, or Etna is an active stratovolcano on the east<br> coast of Sicily, Italy, in the Metropolitan City of Catania, <br>between the cities of Messina and Catania.</p>
+                        </div>
+                    </div>
+            </section>
+<div>Google Interactive Map</div>-->
+
+
+
+
+
+
+
+
+    </main>
+     <script src="script.js"></script>
+   
+</body>
+
+<footer class="footer container-fluid">
+    <div class="row">
+            <div class="col-md-6 text-center">
+                <div class="footer-details">
+                   <h5 class="footer-heading">Contact Us:</h5>
+                   <p class="footer-text"><span>Email Us:</span> <a class="email-address" href="contact.html">visititaly@gmail.com</a></p>
+                   <p class="footer-text"><span>Phone:</span>  +44 536675298</p>
+                   <p class="footer-text"><span>Address :</span>  372 Venice Drive,Rome, Italy</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 text-center">
+                
+                    <h5 class="footer-heading">Social Links:</h5>
+                    <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" rel="noopener"><i class="fa fa-facebook icons"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener"><i class="fa fa-instagram icons"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter" rel="noopener"><i class="fa fa-twitter-square icons"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube" rel="noopener"><i class="fa fa-youtube-square icons"></i></a>
+                    <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat" rel="noopener"><i class="fa fa-snapchat-ghost icons"></i></a>    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
